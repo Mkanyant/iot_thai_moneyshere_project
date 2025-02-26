@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:iot_thai_moneyshere_project/views/money_input_ui.dart';
 import 'package:iot_thai_moneyshere_project/views/splash_screen_ui.dart';
 
 void main() {
   runApp(
-    //
-    IoTThaiMoneyshare());
+      //
+      IoTThaiMoneyshare());
 }
+
 //-----------------------------------
 class IoTThaiMoneyshare extends StatefulWidget {
   const IoTThaiMoneyshare({super.key});
@@ -20,7 +22,7 @@ class _IoTThaiMoneyshareState extends State<IoTThaiMoneyshare> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SplashScreenUi(),
+      home: MoneyInputUI(),
       theme: ThemeData(
         textTheme: GoogleFonts.kanitTextTheme(
           Theme.of(context).textTheme,
